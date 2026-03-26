@@ -1,0 +1,93 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Puts logo on left, links on right */
+  align-items: center;
+  background-color: #00224d; /* Using your Navy Blue */
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Hover effect using your Gold-Orange */
+.nav-links a:hover {
+  color: #e19b1a;
+}
+
+/* Center the entire container on the screen */
+.container-1 {
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Vertical center */
+  align-items: center; /* Horizontal center */
+  height: 100vh; /* Takes full screen height */
+  background-color: #00224d; /* Your Navy Blue */
+  text-align: center; /* Centers text lines */
+  font-family: "Arvo", serif;
+}
+
+/* Styling the "Austien" and "Developer" text */
+.c1-2 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #e19b1a; /* Your Gold-Orange */
+  margin: 10px 0;
+}
+
+.c1-1 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.c1-3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Centering the buttons container */
+.c1-4 {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px;
+}
+
+/* Button styling */
+.c1-4-1,
+.c1-4-2 {
+  padding: 10px 25px;
+  border: 2px solid #e19b1a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.c1-4-2 {
+  background-color: #e19b1a;
+  color: #00224d;
+}
