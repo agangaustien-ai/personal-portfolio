@@ -18,30 +18,260 @@
       href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome icons for Skill / Social / Nav icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-p8R+7Ijfvw/J3gzWxuQ1RH9EyxE8Z4pAm8PtK8DnPt6YSer3FBdA93uuv2YcGv7z0lMSU5zP9jF3lH1ZL7xW9g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
+    <!--this part here is for the navigation bar-->
     <div>
       <nav class="navbar">
         <div class="logo">MyPortfolio</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#projects"
+              ><i class="fas fa-project-diagram"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
 
-    <div class="container-1">
+    <!--this part here is for the home-->
+    <div id="home" class="container-1">
       <div class="c1-1">Hello! I am</div>
       <div class="c1-2">Austien</div>
       <div class="c1-3">Developer</div>
       <div class="c1-4">
-        <div class="c1-4-1">Resume</div>
-        <div class="c1-4-2">Contact Me</div>
+        <button class="home-button resume-button" data-action="resume">
+          <img
+            class="icon-resume"
+            src="/main/assets/icons/iconutil/file.png"
+            alt="Resume Icon"
+          />
+          Resume
+        </button>
+
+        <button class="home-button contact-button" data-action="contact">
+          <img
+            class="icon-contctme"
+            src="/main/assets/icons/iconutil/mail.png"
+            alt="Contact Icon"
+          />
+          Contact Me
+        </button>
       </div>
     </div>
+
+    <!--this part here is for projects-->
+    <div id="projects" class="section-box">
+      <div class="title-text">Projects</div>
+      <div class="projects-grid">
+        <!-- Projects will be added here when available -->
+        <div class="coming-soon">
+          <i
+            class="fas fa-tools fa-3x"
+            style="color: #e19b1a; margin-bottom: 20px"
+          ></i>
+          <p style="color: #ffffff; font-size: 1.2rem">
+            Projects coming soon...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--this part here is for skills-->
+    <div id="skills" class="section-box">
+      <div class="title-text">Tech Stack</div>
+
+      <div class="tc-content">
+        <div>
+          <img src="/main/assets/icons/proglang/java.png" />
+          <span class="skill-label">JAVA</span>
+        </div>
+
+        <div>
+          <img src="/main/assets/icons/proglang/c.png" />
+          <span class="skill-label">C</span>
+        </div>
+
+        <div>
+          <img src="/main/assets/icons/proglang/js.png" />
+          <span class="skill-label">JavaScript</span>
+        </div>
+
+        <div>
+          <img src="/main/assets/icons/proglang/html.png" />
+          <span class="skill-label">HTML</span>
+        </div>
+
+        <div>
+          <img src="/main/assets/icons/proglang/css.png" />
+          <span class="skill-label">CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <!--this part here is for my personal information-->
+    <div id="about">
+      <div class="personal-details">
+        <div><img src="/main/assets/picture/mypfp.svg" class="fas fa-user-circle fa-5x"></img></div>
+        <div>
+          <div class="aboutme1">About Me</div>
+          <div class="aboutme-text">
+            I am a dedicated and proactive individual with a strong passion for
+            leadership and service. I currently serve as the Vice President of
+            the Computer Science Society, where I help lead initiatives,
+            coordinate activities, and support fellow students in their academic
+            and organizational growth. In addition, I take on the role of
+            President of the BiPSU National Service Training Program &#x2D;
+            Civic Welfare Training Service, where I guide community-oriented
+            projects and promote active student involvement in nation-building
+            efforts. Beyond academics and leadership, I am actively involved in
+            our local church as a guitarist, using my skills to contribute to
+            worship and community engagement. These experiences have
+            strengthened my ability to lead with responsibility, collaborate
+            effectively with others, and stay committed to serving both my
+            school and community.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--this part here is for contact me page-->
+    <div>
+      <div id="contact" class="com-tab">
+        <div class="com-tab-1">COMMUNICATION</div>
+        <div class="com-tab-2">Connect With Me</div>
+        <div class="com-tab-3">
+          <p>Cannot do commissioned project yet, piro pwede ta chat chat.</p>
+        </div>
+      </div>
+
+      <div class="com-pannel">
+        <div class="contact-box">
+          <form action="#" method="POST">
+            <div>Send a Message</div>
+            <div>I'll respond as soon as possible.<br /><br /></div>
+            <label for="Name">Your Name</label>
+            <input
+              type="text"
+              id="Name"
+              name="user_name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="Email">Your Email</label>
+            <input
+              type="email"
+              id="Email"
+              name="user_email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="Message">Your Message</label>
+            <textarea
+              id="Message"
+              name="user_message"
+              rows="5"
+              placeholder="How can I help you?"
+            ></textarea>
+
+            <input type="submit" id="Send" value="Send Message" />
+          </form>
+        </div>
+
+        <div>
+          <div class="contact-direct">Direct Contact</div>
+          <button
+            class="con-button"
+            data-type="email"
+            data-value="agangaustien@gmail.com"
+          >
+            <div>email</div>
+            <div>agangaustien@gmail.com</div>
+          </button>
+          <button class="con-button" data-type="phone" data-value="09971056167">
+            <div>phone number 1</div>
+            <div>0997 105 6167</div>
+          </button>
+          <button class="con-button" data-type="phone" data-value="09065767438">
+            <div>phone number 2</div>
+            <div>0906 576 7438</div>
+          </button>
+          <button
+            class="con-button"
+            data-type="location"
+            data-value="Bool Central, Culaba, Biliran, Eastern Visayas, Philippines"
+          >
+            <div>location (main)</div>
+            <div>
+              Bool Central, Culaba, Biliran, Eastern Visayas, Philippines
+            </div>
+          </button>
+          <button
+            class="con-button"
+            data-type="location"
+            data-value="Naval, Biliran (White Boarding House, Chonas right side)"
+          >
+            <div>location (boarding house)</div>
+            <div>Naval, Biliran (White Boarding House, Chonas right side)</div>
+          </button>
+
+          <div class="con-preference">Social Preference</div>
+          <div class="con-icon-pannel">
+            <button class="social-button" data-platform="github" title="GitHub">
+              <img src="/main/assets/icons/socialmed/github.png">
+            </button>
+            <button
+              class="social-button"
+              data-platform="facebook"
+              title="Facebook"
+            >
+              <img src="/main/assets/icons/socialmed/fb.png">
+            </button>
+            <button
+              class="social-button"
+              data-platform="instagram"
+              title="Instagram"
+            >
+              <img src="/main/assets/icons/socialmed/ig.png">
+            </button>
+            <button class="social-button" data-platform="tiktok" title="TikTok">
+              <img src="/main/assets/icons/socialmed/tiktok.png">
+            </button>
+            <button
+              class="social-button"
+              data-platform="whatsapp"
+              title="WhatsApp"
+            >
+              <img src="/main/assets/icons/socialmed/whatsapp.png">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="port.js"></script>
   </body>
 </html>
